@@ -6,22 +6,27 @@ const groups = [
   {
     label: "Backend",
     color: "indigo",
-    items: ["Java", "Spring Boot", "JPA / Hibernate", "REST APIs", "SQL", "Maven"],
+    items: ["Java", "Spring Boot", "JPA / Hibernate", "Python", "FastAPI", "REST APIs", "SQL", "Maven"],
   },
   {
     label: "Frontend",
     color: "fuchsia",
-    items: ["Angular", "TypeScript", "JavaScript", "PrimeNG", "HTML / CSS"],
+    items: ["Next.js", "React", "Angular", "TypeScript", "JavaScript", "PrimeNG", "HTML / CSS"],
   },
   {
     label: "Cloud & Tooling",
     color: "cyan",
-    items: ["AWS Foundations", "Google Cloud", "Looker", "Linux", "Postman", "Git"],
+    items: ["Supabase", "PostgreSQL", "AWS Foundations", "Google Cloud", "Linux", "Git"],
+  },
+  {
+    label: "AI",
+    color: "violet",
+    items: ["Claude API", "Prompt Engineering", "AI-assisted Dev", "Claude Code", "Agentic Workflows"],
   },
   {
     label: "Practice",
     color: "emerald",
-    items: ["Cybersecurity", "Agile / Scrum", "Code Review", "Secure SDLC", "Documentation"],
+    items: ["Cybersecurity", "Agile / Scrum", "Code Review", "Secure SDLC"],
   },
 ];
 
@@ -30,6 +35,7 @@ const colorMap: Record<string, string> = {
   fuchsia: "from-fuchsia-500/30 to-fuchsia-500/0 text-fuchsia-300",
   cyan: "from-cyan-500/30 to-cyan-500/0 text-cyan-300",
   emerald: "from-emerald-500/30 to-emerald-500/0 text-emerald-300",
+  violet: "from-violet-500/30 to-violet-500/0 text-violet-300",
 };
 
 const dotMap: Record<string, string> = {
@@ -37,6 +43,7 @@ const dotMap: Record<string, string> = {
   fuchsia: "bg-fuchsia-400",
   cyan: "bg-cyan-400",
   emerald: "bg-emerald-400",
+  violet: "bg-violet-400",
 };
 
 export default function Skills() {
@@ -54,13 +61,12 @@ export default function Skills() {
             </h2>
           </div>
           <p className="max-w-md text-foreground/55 text-sm leading-relaxed">
-            Day-to-day tools and methodologies I&apos;ve sharpened across two
-            enterprise engagements — with cybersecurity woven through every
-            layer.
+            Tools and technologies I use to ship — from enterprise backend
+            services to full-stack product development.
           </p>
         </div>
 
-        <div className="mt-8 sm:mt-16 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="mt-8 sm:mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
           {groups.map((g, i) => (
             <motion.div
               key={g.label}
