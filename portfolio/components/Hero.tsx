@@ -57,7 +57,7 @@ export default function Hero() {
             <span className="absolute inset-0 animate-ping rounded-full bg-emerald-400/70" />
             <span className="relative h-1.5 w-1.5 rounded-full bg-emerald-400" />
           </span>
-          Java Fullstack · Madrid, Spain
+          Fullstack Developer · Madrid, Spain
         </motion.div>
 
         <motion.h1
@@ -76,12 +76,11 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-5 mx-auto max-w-2xl text-[14px] sm:text-lg text-foreground/65 leading-relaxed px-1"
         >
-          Software developer engineering{" "}
-          <span className="text-foreground/90">secure, performant systems</span>{" "}
-          at the intersection of <span className="text-foreground/90">banking</span>,{" "}
-          <span className="text-foreground/90">cloud</span>, and{" "}
-          <span className="text-foreground/90">cybersecurity</span>. Backed by
-          two years shipping production code at EBN Banco.
+          Software developer building and shipping{" "}
+          <span className="text-foreground/90">full-stack products</span>{" "}
+          — from backend APIs to polished frontends. Two years of{" "}
+          <span className="text-foreground/90">production code</span> at EBN Banco,
+          now shipping products in public.
         </motion.p>
 
         <motion.div
@@ -149,7 +148,7 @@ export default function Hero() {
           {[
             { k: "4+", v: "Years building" },
             { k: "2", v: "Enterprise clients" },
-            { k: "Java · TS", v: "Stack core" },
+            { k: "TS · Python", v: "Stack core" },
             { k: "EU / Remote", v: "Available" },
           ].map((s) => (
             <div
