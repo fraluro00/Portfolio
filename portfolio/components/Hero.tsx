@@ -148,7 +148,7 @@ export default function Hero() {
           {[
             { k: "4+", v: "Years building" },
             { k: "2", v: "Enterprise clients" },
-            { k: "TS · Python", v: "Stack core" },
+            { k: "Java · TS", v: "Stack core" },
             { k: "EU / Remote", v: "Available" },
           ].map((s) => (
             <div
