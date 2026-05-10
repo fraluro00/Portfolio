@@ -55,8 +55,8 @@ export default function Portfolio() {
               05 — Portfolio
             </div>
             <h2 className="mt-4 sm:mt-6 font-[var(--font-display)] text-[clamp(2rem,7vw,3rem)] sm:text-5xl font-semibold tracking-tight leading-[1.05]">
-              Selected work,{" "}
-              <span className="gradient-text">currently under construction</span>.
+              Things I&apos;ve built,{" "}
+              <span className="gradient-text">and things shipping soon</span>.
             </h2>
             <p className="mt-5 sm:mt-6 text-foreground/60 leading-relaxed text-[15px] sm:text-base">
               A growing collection of shipped products and side projects. More
