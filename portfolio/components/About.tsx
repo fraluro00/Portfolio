@@ -57,8 +57,7 @@ export default function About() {
                 <span className="text-foreground/90">correctness</span>,{" "}
                 <span className="text-foreground/90">security</span>, and{" "}
                 <span className="text-foreground/90">user experience</span>{" "}
-                meet. Currently building in public and looking for the right
-                team to do that at scale.
+                meet — and I want to keep working on them at scale.
               </p>
             </motion.div>
           </div>

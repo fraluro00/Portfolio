@@ -130,7 +130,7 @@ export default function Hero() {
             <Mail size={18} />
           </a>
           <a
-            href="https://github.com/fraluro00?tab=repositories"
+            href="https://github.com/fraluro00"
             aria-label="Github"
             className="hover:text-foreground transition-colors"
           >
