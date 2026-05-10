@@ -1,10 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Lock, Sparkles, ArrowUpRight } from "lucide-react";
 
 type Project =
-  | { live: true; title: string; domain: string; description: string; url: string; accent: string }
+  | { live: true; title: string; domain: string; description: string; url: string; accent: string; image?: string }
   | { live: false; title: string; domain: string; accent: string };
 
 const projects: Project[] = [
@@ -15,6 +16,7 @@ const projects: Project[] = [
     description: "Platform for drafting legal agreements with standardised templates and AI-assisted document generation.",
     url: "https://prelegal-gamma.vercel.app",
     accent: "from-violet-500/40 via-indigo-500/30 to-transparent",
+    image: "/prelegal-preview.png",
   },
   {
     live: false,
@@ -95,12 +97,21 @@ export default function Portfolio() {
                   <div className="relative aspect-[16/9] sm:aspect-[4/3] overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${p.accent}`} />
                     <div className="absolute inset-0 grid-bg opacity-50" />
+                    {p.live && p.image && (
+                      <Image
+                        src={p.image}
+                        alt={p.title}
+                        fill
+                        className="object-cover object-top opacity-80 group-hover:opacity-100 transition-opacity"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                    )}
                     <div className="absolute inset-0 flex items-center justify-center">
                       {p.live ? (
                         <ArrowUpRight
                           size={32}
                           strokeWidth={1.4}
-                          className="text-foreground/30 group-hover:text-foreground/70 transition-colors group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                          className="text-white/0 group-hover:text-white/80 transition-colors group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform drop-shadow-lg"
                         />
                       ) : (
                         <div className="flex flex-col items-center gap-3 text-foreground/40 group-hover:text-foreground/70 transition-colors">
