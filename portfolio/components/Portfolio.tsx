@@ -59,9 +59,8 @@ export default function Portfolio() {
               <span className="gradient-text">currently under construction</span>.
             </h2>
             <p className="mt-5 sm:mt-6 text-foreground/60 leading-relaxed text-[15px] sm:text-base">
-              This space will host case studies, side projects, and open-source
-              contributions. Stay tuned — or reach out if you&apos;d like an
-              early walkthrough.
+              A growing collection of shipped products and side projects. More
+              on the way — reach out if you want to see something specific.
             </p>
           </div>
           <a
