@@ -50,12 +50,12 @@ export default function Journey() {
           </div>
           <h2 className="mt-4 sm:mt-6 font-[var(--font-display)] text-[clamp(2rem,7vw,3rem)] sm:text-5xl font-semibold tracking-tight leading-[1.05]">
             From <span className="gradient-text">internship</span> to shipping
-            production banking systems.
+            production products.
           </h2>
           <p className="mt-5 sm:mt-6 text-foreground/60 leading-relaxed text-[15px] sm:text-base">
-            A focused trajectory through enterprise environments — from
-            government-facing apps at Eviden to the regulated, mission-critical
-            world of EBN Banco.
+            A focused trajectory — from government-facing apps at Eviden, to
+            banking systems at EBN Banco, to building and shipping my own
+            products.
           </p>
         </div>
 
