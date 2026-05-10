@@ -12,12 +12,12 @@ const traits = [
   {
     icon: Code2,
     title: "Fullstack fluent",
-    body: "From Spring Boot services to Angular UIs — owning features end-to-end.",
+    body: "From Spring Boot APIs to Next.js frontends — shipping full products end-to-end.",
   },
   {
     icon: Zap,
     title: "Reliability driven",
-    body: "REST APIs tested, monitored, and hardened for production banking workloads.",
+    body: "REST APIs tested, monitored, and hardened. Products deployed and running in production.",
   },
   {
     icon: Users,
@@ -47,18 +47,18 @@ export default function About() {
                 <span className="gradient-text">survives production</span>.
               </h2>
               <p className="mt-5 sm:mt-6 text-foreground/65 leading-relaxed text-[15px] sm:text-base">
-                I&apos;m a software developer based in Madrid with a solid
-                foundation in Java-based technologies and recent formal training
-                in cybersecurity. I build and maintain backend services with
-                Spring Boot and JPA, ship frontends in Angular and TypeScript,
-                and work comfortably across Linux environments.
+                I&apos;m a software developer based in Madrid who builds and
+                ships full-stack products. From Java backend services to Next.js
+                frontends, I own features end-to-end — design, implementation,
+                and deployment.
               </p>
               <p className="mt-4 text-foreground/65 leading-relaxed text-[15px] sm:text-base">
                 I gravitate toward problems where{" "}
                 <span className="text-foreground/90">correctness</span>,{" "}
                 <span className="text-foreground/90">security</span>, and{" "}
                 <span className="text-foreground/90">user experience</span>{" "}
-                meet — and I want to keep working on them at scale.
+                meet. Currently building in public and looking for the right
+                team to do that at scale.
               </p>
             </motion.div>
           </div>
