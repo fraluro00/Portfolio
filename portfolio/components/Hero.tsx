@@ -79,8 +79,7 @@ export default function Hero() {
           Software developer building and shipping{" "}
           <span className="text-foreground/90">full-stack products</span>{" "}
           — from backend APIs to polished frontends. Two years of{" "}
-          <span className="text-foreground/90">production code</span> at EBN Banco,
-          now shipping products in public.
+          <span className="text-foreground/90">production code</span> at EBN Banco.
         </motion.p>
 
         <motion.div
