@@ -5,7 +5,7 @@ import About from "@/components/About";
 import Journey from "@/components/Journey";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
-import Portfolio from "@/components/Portfolio";
+import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import DigitalTwin from "@/components/DigitalTwin";
@@ -21,7 +21,7 @@ export default function Home() {
         <Journey />
         <Skills />
         <Education />
-        <Portfolio />
+        <Projects />
         <Contact />
       </main>
       <Footer />

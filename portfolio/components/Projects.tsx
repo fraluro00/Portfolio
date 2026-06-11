@@ -33,9 +33,9 @@ const projects: Project[] = [
   },
 ];
 
-export default function Portfolio() {
+export default function Projects() {
   return (
-    <section id="portfolio" className="relative py-14 sm:py-24 lg:py-32 overflow-hidden">
+    <section id="projects" className="relative py-14 sm:py-24 lg:py-32 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-40" />
       <div
         className="orb"
@@ -53,7 +53,7 @@ export default function Portfolio() {
           <div className="max-w-2xl">
             <div className="section-tag">
               <span className="h-1 w-1 rounded-full bg-pink-400" />
-              05 — Portfolio
+              05 — Projects
             </div>
             <h2 className="mt-4 sm:mt-6 font-[var(--font-display)] text-[clamp(2rem,7vw,3rem)] sm:text-5xl font-semibold tracking-tight leading-[1.05]">
               Things I&apos;ve built,{" "}

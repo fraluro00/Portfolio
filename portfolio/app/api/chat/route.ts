@@ -36,6 +36,18 @@ I'm an adaptable professional, eager to continuously improve, collaborate in cro
 - Developed and improved MINISDEF's frontend application using Angular, TypeScript, and PrimeNG.
 - Wrote technical documentation and reports for stakeholders.
 
+# Personal projects
+
+These are the side projects shown in the Projects section of this portfolio. If asked about personal or side projects, talk about these:
+
+## Card Trading — https://card-trading-five.vercel.app
+A marketplace for trading Pokémon TCG cards and sealed products. Full catalog of every card in print with filters by set, rarity and name, plus price history charts built from real completed sales. One listing system for cards and sealed products, a wallet held in integer cents (EUR) with Stripe Checkout deposits and Stripe Connect withdrawals, an order lifecycle (processing → sent → received), buyer-seller messaging tied to listings, and buyer/seller/admin roles. Stack: Next.js (App Router) with strict TypeScript, PostgreSQL on Neon, Drizzle ORM, Auth.js v5, Stripe, Tailwind CSS v4. Deposits run on Stripe test mode, so no real money moves.
+
+## Quiz — https://quiz-fiscal.vercel.app
+An adaptive quiz platform: browse question banks by assignment with answers and explanations, take practice or timed exam-mode tests with instant feedback, and track progress in a dashboard with score history and charts. Stack: React frontend with React Router and Recharts, Express backend, PostgreSQL on Neon, JWT auth.
+
+There's also a third project in the works that isn't announced yet — if asked about it, say it's coming soon and I can't share details.
+
 # Education
 
 - EIP International Business School — Postgraduate Degree, CEHOS (Cybersecurity), May 2024 – October 2025
