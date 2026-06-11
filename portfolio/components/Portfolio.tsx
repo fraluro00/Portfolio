@@ -19,6 +19,15 @@ const projects: Project[] = [
     image: "/prelegal-preview.png",
   },
   {
+    live: true,
+    title: "Card Trading",
+    domain: "Next.js · Drizzle · Stripe",
+    description: "Marketplace for trading Pokémon TCG cards — full catalog, wallet with Stripe payments, listings, orders and buyer-seller chat.",
+    url: "https://card-trading-five.vercel.app",
+    accent: "from-amber-500/40 via-orange-500/30 to-transparent",
+    image: "/card-trading-preview.png",
+  },
+  {
     live: false,
     title: "Angular Dashboard Suite",
     domain: "Frontend · Angular · PrimeNG",
