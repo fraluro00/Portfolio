@@ -6,18 +6,9 @@ import { Lock, Sparkles, ArrowUpRight } from "lucide-react";
 
 type Project =
   | { live: true; title: string; domain: string; description: string; url: string; accent: string; image?: string }
-  | { live: false; title: string; domain: string; accent: string };
+  | { live: false; accent: string };
 
 const projects: Project[] = [
-  {
-    live: true,
-    title: "PreLegal",
-    domain: "Next.js · FastAPI · Supabase",
-    description: "Platform for drafting legal agreements with standardised templates and AI-assisted document generation.",
-    url: "https://prelegal-gamma.vercel.app",
-    accent: "from-violet-500/40 via-indigo-500/30 to-transparent",
-    image: "/prelegal-preview.png",
-  },
   {
     live: true,
     title: "Card Trading",
@@ -28,15 +19,16 @@ const projects: Project[] = [
     image: "/card-trading-preview.png",
   },
   {
-    live: false,
-    title: "Angular Dashboard Suite",
-    domain: "Frontend · Angular · PrimeNG",
-    accent: "from-fuchsia-500/40 via-pink-500/30 to-transparent",
+    live: true,
+    title: "Quiz",
+    domain: "React · Express · Neon",
+    description: "Adaptive quiz platform with question banks, practice and exam-mode tests, and a dashboard tracking score history and progress.",
+    url: "https://quiz-fiscal.vercel.app",
+    accent: "from-violet-500/40 via-purple-500/30 to-transparent",
+    image: "/quiz-preview.png",
   },
   {
     live: false,
-    title: "Cybersec Playground",
-    domain: "Research · CEHOS · Pentesting",
     accent: "from-cyan-500/40 via-teal-500/30 to-transparent",
   },
 ];
@@ -92,7 +84,7 @@ export default function Portfolio() {
               : {};
             return (
               <motion.div
-                key={p.title}
+                key={p.live ? p.title : `soon-${i}`}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
@@ -143,19 +135,19 @@ export default function Portfolio() {
                     </div>
                   </div>
 
-                  <div className="p-5 border-t border-white/5">
-                    <div className="font-[var(--font-display)] text-lg font-medium tracking-tight">
-                      {p.title}
-                    </div>
-                    <div className="mt-1 text-xs text-foreground/50 font-mono">
-                      {p.domain}
-                    </div>
-                    {p.live && (
+                  {p.live && (
+                    <div className="p-5 border-t border-white/5">
+                      <div className="font-[var(--font-display)] text-lg font-medium tracking-tight">
+                        {p.title}
+                      </div>
+                      <div className="mt-1 text-xs text-foreground/50 font-mono">
+                        {p.domain}
+                      </div>
                       <p className="mt-2 text-xs text-foreground/50 leading-relaxed">
                         {p.description}
                       </p>
-                    )}
-                  </div>
+                    </div>
+                  )}
                 </Wrapper>
               </motion.div>
             );
