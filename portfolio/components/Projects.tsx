@@ -89,10 +89,11 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="h-full"
               >
                 <Wrapper
                   {...wrapperProps}
-                  className="group block relative rounded-2xl border border-white/5 bg-surface/50 overflow-hidden hover:border-white/15 transition-all"
+                  className="group flex flex-col h-full relative rounded-2xl border border-white/5 bg-surface/50 overflow-hidden hover:border-white/15 transition-all"
                 >
                   <div className="relative aspect-[16/9] sm:aspect-[4/3] overflow-hidden">
                     <div className={`absolute inset-0 bg-gradient-to-br ${p.accent}`} />
@@ -135,8 +136,8 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  {p.live && (
-                    <div className="p-5 border-t border-white/5">
+                  {p.live ? (
+                    <div className="flex-1 p-5 border-t border-white/5">
                       <div className="font-[var(--font-display)] text-lg font-medium tracking-tight">
                         {p.title}
                       </div>
@@ -147,6 +148,8 @@ export default function Projects() {
                         {p.description}
                       </p>
                     </div>
+                  ) : (
+                    <div className="flex-1 border-t border-white/5 bg-black" />
                   )}
                 </Wrapper>
               </motion.div>
